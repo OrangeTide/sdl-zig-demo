@@ -1,17 +1,20 @@
 .{
-    .name = "sdl-zig-demo",
+    .fingerprint = 0xd536f9a26dace7fd,
+    .name = .sdl_zig_demo,
     .version = "0.0.0",
+    .minimum_zig_version = "0.15.0",
     .dependencies = .{
-        .sdl = .{
-            .url = "https://github.com/andrewrk/SDL/archive/3eb87f0f5b8d815d5a608b732e1d77f0876712d9.tar.gz",
-            .hash = "12206de2e590f0866e7d96a5e60dd352ec28c7006c7a883c9ede84e25b6c61c7c088",
+        .SDL = .{
+            .url = "git+https://github.com/allyourcodebase/SDL?ref=main#005c64130effb6019c42769d3a277180bdbeb0b2",
+            .hash = "SDL-2.32.6-JToi32yUEgFuZPcB2O6IbBHHsP2Ul8QuRYh488w2VnMy",
+            .lazy = true,
         },
     },
     .paths = .{
-        "LICENSE",
-        "README.md",
         "build.zig",
         "build.zig.zon",
         "src",
+        "LICENSE",
+        "README.md",
     },
 }
